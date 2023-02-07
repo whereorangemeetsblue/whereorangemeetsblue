@@ -1,0 +1,232 @@
+#smooth-content {
+  overflow: visible;
+  width: 100%;
+  height: 9000px;
+  background: url(../img/bg02.png) bottom;
+  /* height: calc(500vh + 3060px); */
+  /* 전체 높이 */
+}
+
+.mb {
+  display: none;
+}
+
+#boat .boat {
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  transform: translate(-50%,0) rotate(90deg);
+  z-index: 500;
+}
+
+#section01 {
+  height: 4000px;
+}
+.trigger01 {
+  height: 4000px;
+}
+.fix01 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url(../img/bg01.png);
+}
+
+#section01 .maintitle01 {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+
+#section01 .maintitle01 ul {
+  display: flex;
+}
+
+#section01 .maintitle01 li {
+  display: flex;
+}
+
+#section01 .maintitle01 li+li {
+  margin-left: 40px;
+}
+
+#section01 .maintitle01 .two {
+  opacity: 0;
+  width: 0;
+  overflow: hidden;
+}
+
+#section01 .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+
+#section02 {
+  height: 1000px;
+}
+
+#section02 .words {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+#section03 {
+  height: 1000px;
+}
+
+#section03 .website {
+  position: absolute; 
+  top: 100px;
+  left: 100px;
+}
+
+#section03 .fontspace {
+  position: absolute; 
+  top: 900px;
+  left: 1200px;
+}
+
+#section03 .various {
+  position: absolute; 
+  top: 1800px;
+  left: 100px;
+}
+
+#section03 .comingsoon {
+  position: absolute; 
+  top: 2700px;
+  left: 1200px;
+}
+
+@media only screen and (max-width: 600px) {
+  .pc {
+    display: none;
+  }
+  .mb {
+    display: block;
+  }
+
+  #smooth-content {
+    overflow: visible;
+    width: 100%;
+    height: 4000px;
+    background: url(../img/mobile/backgroundmobile2.png) bottom;
+    /* 전체 높이 */
+  }
+
+  .whereorangemeetsbluemobile .two {
+    height: 170px;
+    overflow: hidden;
+  }
+
+  .whereorangemeetsbluemobile .two img {
+    transform: translateY(170px);
+    transition: 1s;
+  }
+  .whereorangemeetsbluemobile.on .two img {
+    transform: translateY(0);
+  }
+
+  #section04 {
+    position: fixed;
+    height: 1000px;
+  }
+  .backgroundmobile {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -100px;
+
+  }
+  #section04 .where {
+    position: absolute;
+    top:50px;
+    left: 10px;
+    display: flex;
+    transform: scale(80%);
+  }
+
+  #section04 .orange {
+    position: absolute;
+    top: 200px;
+    left: 70px;
+    display: flex;
+    transform: scale(80%);
+  }
+
+  #section04 .meets {
+    position: absolute;
+    top: 350px;
+    left: 140px;
+    display: flex;
+    transform: scale(80%);
+  }
+
+  #section04 .blue {
+    position: absolute;
+    top: 500px;
+    left: 240px;
+    display: flex;
+    transform: scale(80%);
+  }
+
+  #section04 .boatmobile {
+    position: absolute;
+    top: 550px;
+    left: 40px;
+    display: flex;
+  }
+
+  #section04 .odeto {
+    position: absolute;
+    top: 1300px;
+    left: 200px;
+    transform: scale(70%);
+    height: 208px;
+    overflow: hidden;
+  }
+
+  #section04 .odeto img {
+    transform: translateY(300px) skewX(50deg);
+    transition: 1s;
+  }
+  #section04 .odeto.on img {
+    transform: translateY(0) skewY(0);
+  }
+
+  #section04 .donperi {
+    position: absolute;
+    top: 1900px;
+    left: 200px;
+    transform: scale(80%);
+  }
+
+  #section04 .fontmob {
+    position: absolute;
+    top: 2400px;
+    left: 200px;
+    transform: scale(80%);
+  }
+
+  #section04 .coming {
+    position: absolute;
+    top: 2800px;
+    left: 200px;
+    transform: scale(80%);
+  }
+
+  #section04 .soon {
+    position: absolute;
+    top: 3200px;
+    left: 200px;
+    transform: scale(70%);
+  }
+
+  }
+
